@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson13</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="box.html" target="_blank" class="header__link">Посилання на експеременти</a>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__sections-transition section-transition">
+				<div class="section-transition__container">
+					<div class="section-transition__block transition-duration">transition-duration: 1s;</div>
+					<div class="section-transition__block transition-property">transition-duration: 1s; transition-property: background-color;</div>
+					<div class="section-transition__block transition-delay">transition-duration: 1s; transition-delay: 1.5s;</div>
+					<div class="section-transition__block transition-timing-function-easy-in">transition-duration: 2s; transition-timing-function: ease-in; починається повільно, а вкінці прискорюється</div>
+					<div class="section-transition__block transition-timing-function-easy-out">transition-duration: 2s; transition-timing-function: ease-out; починається швидко і уповільнюється в кінці</div>
+					<div class="section-transition__block transition-timing-function-ease-in-out">transition-duration: 2s; transition-timing-function: ease-in-out; починається і закінчується повільно</div>
+					<div class="section-transition__block transition-timing-function-linear">transition-duration: 2s; transition-timing-function: linear; рівномірно</div>
+					<div class="section-transition__block transition-timing-function-steps-start">transition-duration: 2s; transition-timing-function: steps(2,start);</div>
+					<div class="section-transition__block transition-timing-function-steps-end">transition-duration: 2s; transition-timing-function: steps(2,end);</div>
+					<div class="section-transition__block transition-timing-function-cubic-bezier">
+						width: 250px;
+						transition-duration: 2s;
+						transition-delay: 0s;
+						transition-property: all;
+						transition-timing-function: cubic-bezier(0.68,-0.75,0.265,1.55);
+					</div>
+				</div>
+			</div>
+			<div class="main__section-animation section-animation">
+				<div class="section-animation__container">
+					<div class="section-animation__block animation-duration"></div>
+					<div class="section-animation__block animation-timing-function-ease-in"></div>
+					<div class="section-animation__block animation-timing-function-ease-out"></div>
+					<div class="section-animation__block animation-timing-function-ease-in-out"></div>
+					<div class="section-animation__block animation-timing-function-linear"></div>
+					<div class="section-animation__block animation-timing-function-steps-start"></div>
+					<div class="section-animation__block animation-timing-function-steps-end"></div>
+					<div class="section-animation__block animation-timing-function-cubic-bezier"></div>
+					<div class="section-animation__block animation-iteration-count"></div>
+					<div class="section-animation__block animation-direction-reverce"></div>
+					<div class="section-animation__block animation-direction-alternate"></div>
+					<div class="section-animation__block animation-direction-alternate-reverse"></div>
+					<div class="section-animation__block animation-play-state"></div>
+					<div class="section-animation__block animation-delay"></div>
+					<div class="section-animation__block animation-fill-mode"></div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
