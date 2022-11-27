@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_22</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="homework-1">
+				<h2>Основи синтаксису (ДЗ)</h2>
+				<h3>Варіант №1</h3>
+				<p>console.log('Учим JS') <mark>Вірно</mark></p>
+				<h3>Варіант №2</h3>
+				<p>console.log('JS') <mark>Вірно</mark></p>
+				<p>console.log('Учим')</p>
+				<h3>Варіант №3</h3>
+				<p>console.log('Учим') console.log('Учим') <mark>Не вірно</mark> Потрібно поставити крапку з комою (;)</p>
+				<h3>Варіант №4</h3>
+				<p>console.log('Учим) <mark>Не вірно</mark> Потрібно закрити лапки ('')</p>
+				<p>console.log('JS')</p>
+			</div>
+			<div class="homework-2">
+				<h2>Змінні (ДЗ)</h2>
+				<h3>Варіант №1</h3>
+				<p>let user = `Вася`  let age = 36 <mark>Не вірно</mark> Потрібно після перемінних ставити (;)</p>
+				<h3>Варіант №2</h3>
+				<p>let myage = 36; <mark>Вірно</mark></p>
+				<h3>Варіант №3</h3>
+				<p>const BLOCK_SIZE = 14 + 50; <mark>Теоретично вірно, але краще так записувати константи які мають не змінне значення</mark> </p>
+				<h3>Варіант №4</h3>
+				<p>const BLOCK_HEIGHT = 100; <mark>Вірно</mark></p>
+				<h3>Варіант №5</h3>
+				<p>if (true){ <br>
+					var size = 15; <br>
+				} <br>
+				console.log(size); <mark>Вірно</mark></p>
+			</div>
+			<div class="homework-3">
+				<h2>Типи даних (ДЗ)</h2>
+				<h3>Варіант №1</h3>
+				<p>let userAge = 36;<br>
+					let userInfo = "Фрилансер ${userAge}"; <mark>Не вірно, потрібно закрити в такі лапки(``)</mark></p>
+				<h3>Варіант №2</h3>
+				<p>
+					let userHeight = 145 / 0;<br>
+					console.log(userHeight); <mark>Не вірно, буде infinity</mark>
+				</p>
+				<h3>Варіант №3</h3>
+				<p>
+					let userName;<br>
+					console.log(userName); <mark>Не вірно, буде undefined</mark>
+				</p>
+				<h3>Варіант №4</h3>
+				<p>
+					let userSize = `28` / `2`;<br>
+					console.log(typeof userSize); <mark>Вірно</mark>
+				</p>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
