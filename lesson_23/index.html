@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_22</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="homework-1">
+				<h2>Оператори (ДЗ)</h2>
+				<h3>Варіант №1</h3>
+				<p>console.log('35' + - "22"); <mark>Не вірно</mark> бо оператор додавання не змінює тип даних</p>
+				<h3>Варіант №2</h3>
+				<p>console.log('35' * "22"); <mark>Вірно</mark></p>
+				<h3>Варіант №3</h3>
+				<p>console.log('558' > 22++); <mark>Не вірно</mark> тому що <mark>інкремент</mark> працює тільки з самою змінною, а не її значенням</p>
+				<h3>Варіант №4</h3>
+				<p>
+					let userCounter = 0;<br>
+					let newUserCounter = userCounter++;<br>
+					console.log(userCounter); <mark>Вірно</mark> тому що ми задали інше значення змінної <mark>userCounter</mark> від попереднього, за допомогою <mark>інкременту</mark>
+				</p>
+				<h3>Варіант №5</h3>
+				<p>console.log(!false && 11 || 18 && !''); <mark>Вірно</mark> Тому що <mark>!false && 11</mark> верне <mark>true</mark></p>
+				<h3>Варіант №6</h3>
+				<p>let name = 0;<br>
+					console.log(name ?? "Без имени"); <mark>Вірно</mark></p>
+			</div>
+			<div class="homework-2">
+				<h2>IF ELSE (ДЗ)</h2>
+				<h3>Варіант №1</h3>
+				<p>if (1 === '1') {<br>
+					console.log('True');<br>
+				} else {<br>
+					console.log('False');<br>
+				} <mark>Верне false </mark> тому що <mark>1</mark> це цифра, а <mark>"1"</mark> це рядок</p>
+				<h3>Варіант №2</h3>
+				<p>if (5 == '5') {<br>
+					console.log('True');<br>
+				} else {<br>
+					console.log('False');<br>
+				} <mark>Вірно</mark> тому що <mark>==</mark> це порівняння</p>
+				<h3>Варіант №3</h3>
+				<p>let message = (92 > '11' && 58 < 100) ? 'True' : 'False';br\
+					console.log(message); <mark>Вірно</mark></p>
+				<h3>Варіант №4</h3>
+				<p>if (0) {<br>
+					console.log('False');<br>
+				} else if (' ') {<br>
+					console.log('True');<br>
+				} Верне 2 варіант (True), бо <mark>0</mark> це False, а <mark>' '</mark> це True</p>
+			</div>
+			<div class="homework-3">
+				<h2>Цикли FOR і WHILE (ДЗ)</h2>
+				<h3>Задача №1</h3>
+				<p>
+					let num = 1;<br>
+					do {<br>
+						console.log(num);<br>
+						num++;<br>
+					} while (num < 6)
+				</p>
+				<h3>Задача №2</h3>
+				<p>
+					let num = 8;<br>
+					while (num) {<br>
+						console.log(num);<br>
+						num--;<br>
+					} Не віроно, останній результат буде 1
+				</p>
+				<h3>Задача №3</h3>
+				<p><mark>Дано:</mark> <br> for (let num = 0; num < 2; num++) {<br>
+					console.log(`Число: ${num}`);<br>
+					} <br>
+					<mark>Через while:</mark> <br>
+					let num = 0;<br>
+					do {<br>
+						console.log(`Число: ${num}`);<br>
+						num++;<br>
+					} while (num < 2);
+				</p>
+				<h3>Задача №4</h3>
+				<p>Зупинили роботу циклу №1, коли змінна size = 1 <br>
+					Цикл №1 <br>
+					firstFor: for (let num = 0; num < 2; num++) {<br>
+						// Цикл №2 <br>
+						for (let size = 0; size < 3; size++) {<br>
+					console.log(size);<br>
+					if (size == 1) { break firstFor;} <br> 
+					} <br>
+				}
+				</p>
+			</div>
+			<div class="homework-4">
+				<h2>ЧИСЛА (ДЗ)</h2>
+				<h3>Задача №1</h3>
+				let numOne = Math.round(1.005 * 100) / 100;<br>
+				console.log(numOne);<br>
+				Відповідь: <br>
+				let sourceNum = 1.005 + Number.EPSILON;<br>
+				let numOne = Math.round(sourceNum * 100) / 100;<br>
+				console.log(numOne);
+				<h3>Задача №2</h3>
+				let value = '135.58px';<br>
+				console.log(value);<br>
+				Відповідь: <br>
+				let value = parseFloat('135.58px');<br>
+				console.log(value);
+				<h3>Задача №3</h3>
+				let value = 58 + "Фрілансер";<br>
+				if (Написати відповідь) {<br>
+					console.log('Результат виразу NaN');<br>
+				} <br>
+				Відповідь: <br>
+				let value = 58 + "Фрілансер";<br>
+				if (isNaN) {<br>
+					console.log('Результат виразу NaN');<br>
+				}
+				<h3>Задача №4</h3>
+				Знайти максимальне число: <br>
+				(10, 58, 39, -150, 0) <br>
+				Відповідь: <br>
+				let num = Math.max(10, 58, 39, -150, 0) <br>
+				<h3>Задача №5</h3>
+				Округлити число 58.858 до числа 58 <br>
+				Відповідь: <br>
+				let num = Math.floor(58.858);<br>
+			</div>
+			<div class="homework-4">
+				<h2>РЯДКИ (ДЗ)</h2>
+				<h3>Задача №1</h3>
+				let fls = 'Фрілансер';<br>
+				let text = 'Привіт! Я ${fls}';<br>
+				Не вірно, потрібні закрити в зворотні лапки (``)
+				<h3>Задача №2</h3>
+				let text = `Фрілансер`;<br>
+				console.log(text[5]);
+				<h3>Задача №3</h3>
+				let text = 123 + "456";<br>
+				Не вірно, потрібно щоб були числа
+				<h3>Задач №4</h3>
+				let text = `Фрілансер`;<br>
+				console.log(text.toUpperCase());
+				<h3>Задач №5</h3>
+				let text = `Фрілансер`;<br>
+				console.log(text.slice(3, 6));
+				<h3>Задач №6</h3>
+				let text = 'фрілансер';<br>
+				console.log(text.includes('лан', 4));<br>
+				Буде false?, щоб було true, потрібно<br>
+				console.log(text.includes('лан', 3));
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
